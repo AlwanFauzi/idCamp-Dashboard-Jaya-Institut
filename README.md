@@ -31,7 +31,7 @@ Sumber data:
 Setup environment:
 ```powershell
 python -m venv venv
-venv\Scripts\Activate.ps1
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -67,6 +67,12 @@ Artefak dashboard:
 
 https://lookerstudio.google.com/reporting/2c30915c-324c-4b3f-91fe-cc1b2d0fb522
 
+Langkah-langkah akses dashboard:
+1. Buka link Looker Studio di browser.
+2. Tunggu sampai seluruh komponen visual selesai dimuat.
+3. Gunakan filter/periode yang tersedia untuk mengeksplorasi indikator dropout.
+4. Jika muncul permintaan akses, login menggunakan akun Google lalu refresh halaman.
+
 ## Menjalankan Sistem Machine Learning
 Prototype sistem machine learning tersedia pada file app.py.
 
@@ -95,7 +101,14 @@ Ringkasan metrik model saat ini (berdasarkan model/model_metrics.json):
 6. F1-Score: 0.802
 
 Link prototype deployment:
-Belum tersedia. Prototype saat ini dijalankan secara lokal menggunakan Streamlit.
+https://idcamp-dashboard-jaya-institut.streamlit.app/
+
+Langkah-langkah akses prototype machine learning:
+1. Buka link deployment Streamlit di browser.
+2. Pada halaman utama, isi form prediksi single atau gunakan menu upload CSV untuk batch prediction.
+3. Untuk batch prediction, gunakan struktur kolom yang sama dengan data/sample_input.csv.
+4. Lihat hasil prediksi pada output probabilitas, label, dan level risiko.
+5. Jika aplikasi sedang sleep, tunggu beberapa detik hingga proses warm-up selesai lalu refresh.
 
 ## Conclusion
 Proyek ini berhasil menyediakan solusi end-to-end untuk membantu deteksi dini risiko dropout mahasiswa di Jaya Jaya Institut. Dari sisi analitik, faktor finansial dan performa akademik semester awal menjadi indikator yang kuat terhadap kemungkinan dropout. Dari sisi implementasi, dashboard dan aplikasi prediksi sudah dapat digunakan sebagai alat bantu pengambilan keputusan awal.
