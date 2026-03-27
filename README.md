@@ -1,5 +1,5 @@
 
-# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
+# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Jaya Jaya Institut
 
 ## Business Understanding
 Jaya Jaya Institut menghadapi tantangan tingginya mahasiswa yang tidak menyelesaikan studi (dropout). Kondisi ini berdampak pada kualitas performa akademik institusi, efektivitas proses pembinaan mahasiswa, dan pengambilan keputusan manajerial. Untuk itu, dibutuhkan solusi berbasis data agar risiko dropout dapat dideteksi lebih dini.
