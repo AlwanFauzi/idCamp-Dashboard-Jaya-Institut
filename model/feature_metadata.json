@@ -1,0 +1,585 @@
+{
+  "Marital_status": {
+    "dtype": "int64",
+    "default": 1,
+    "description": "Status pernikahan (kode asli dataset)",
+    "kind": "categorical",
+    "options": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "Application_mode": {
+    "dtype": "int64",
+    "default": 1,
+    "description": "Mode pendaftaran (kode asli dataset)",
+    "kind": "categorical",
+    "options": [
+      1,
+      2,
+      5,
+      7,
+      10,
+      15,
+      16,
+      17,
+      18,
+      26,
+      27,
+      39,
+      42,
+      43,
+      44,
+      51,
+      53,
+      57
+    ]
+  },
+  "Application_order": {
+    "dtype": "int64",
+    "default": 1,
+    "description": "Urutan pilihan program saat mendaftar",
+    "kind": "categorical",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9
+    ]
+  },
+  "Course": {
+    "dtype": "int64",
+    "default": 9500,
+    "description": "Kode program studi",
+    "kind": "categorical",
+    "options": [
+      33,
+      171,
+      8014,
+      9003,
+      9070,
+      9085,
+      9119,
+      9130,
+      9147,
+      9238,
+      9254,
+      9500,
+      9556,
+      9670,
+      9773,
+      9853,
+      9991
+    ],
+    "labels": {
+      "33": "Biofuel Production Technologies",
+      "171": "Animation and Multimedia Design",
+      "8014": "Social Service (Evening)",
+      "9003": "Agronomy",
+      "9070": "Communication Design",
+      "9085": "Veterinary Nursing",
+      "9119": "Informatics Engineering",
+      "9130": "Equinculture",
+      "9147": "Management",
+      "9238": "Social Service",
+      "9254": "Tourism",
+      "9500": "Nursing",
+      "9556": "Oral Hygiene",
+      "9670": "Advertising and Marketing Management",
+      "9773": "Journalism and Communication",
+      "9853": "Basic Education",
+      "9991": "Management (Evening)"
+    }
+  },
+  "Daytime_evening_attendance": {
+    "dtype": "int64",
+    "default": 1,
+    "description": "Kelas siang atau malam",
+    "kind": "binary",
+    "options": [
+      0,
+      1
+    ],
+    "labels": {
+      "1": "Daytime",
+      "0": "Evening"
+    }
+  },
+  "Previous_qualification": {
+    "dtype": "int64",
+    "default": 1,
+    "description": "Kualifikasi pendidikan sebelumnya (kode asli dataset)",
+    "kind": "categorical",
+    "options": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      12,
+      14,
+      15,
+      19,
+      38,
+      39,
+      40,
+      42,
+      43
+    ]
+  },
+  "Previous_qualification_grade": {
+    "dtype": "float64",
+    "default": 133.1,
+    "description": "Nilai pendidikan sebelumnya",
+    "kind": "numeric",
+    "min": 95.0,
+    "max": 190.0
+  },
+  "Nacionality": {
+    "dtype": "int64",
+    "default": 1,
+    "description": "Kewarganegaraan (kode asli dataset)",
+    "kind": "categorical",
+    "options": [
+      1,
+      2,
+      6,
+      11,
+      13,
+      14,
+      17,
+      21,
+      22,
+      24,
+      25,
+      26,
+      32,
+      41,
+      62,
+      100,
+      101,
+      103,
+      105,
+      108,
+      109
+    ]
+  },
+  "Mothers_qualification": {
+    "dtype": "int64",
+    "default": 1,
+    "description": "Kualifikasi pendidikan ibu (kode asli dataset)",
+    "kind": "categorical",
+    "options": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      14,
+      18,
+      19,
+      22,
+      26,
+      27,
+      29,
+      30,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  "Fathers_qualification": {
+    "dtype": "int64",
+    "default": 37,
+    "description": "Kualifikasi pendidikan ayah (kode asli dataset)",
+    "kind": "categorical",
+    "options": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      18,
+      19,
+      20,
+      22,
+      25,
+      26,
+      27,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  "Mothers_occupation": {
+    "dtype": "int64",
+    "default": 9,
+    "description": "Pekerjaan ibu (kode asli dataset)",
+    "kind": "categorical",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      90,
+      99,
+      122,
+      123,
+      125,
+      131,
+      132,
+      134,
+      141,
+      143,
+      144,
+      151,
+      152,
+      153,
+      171,
+      173,
+      175,
+      191,
+      192,
+      193,
+      194
+    ]
+  },
+  "Fathers_occupation": {
+    "dtype": "int64",
+    "default": 9,
+    "description": "Pekerjaan ayah (kode asli dataset)",
+    "kind": "categorical",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      90,
+      99,
+      101,
+      102,
+      103,
+      112,
+      114,
+      121,
+      122,
+      123,
+      124,
+      131,
+      132,
+      134,
+      135,
+      141,
+      143,
+      144,
+      151,
+      152,
+      153,
+      154,
+      161,
+      163,
+      171,
+      172,
+      174,
+      175,
+      181,
+      182,
+      183,
+      192,
+      193,
+      194,
+      195
+    ]
+  },
+  "Admission_grade": {
+    "dtype": "float64",
+    "default": 126.1,
+    "description": "Nilai admisi",
+    "kind": "numeric",
+    "min": 95.0,
+    "max": 190.0
+  },
+  "Displaced": {
+    "dtype": "int64",
+    "default": 1,
+    "description": "Status displaced",
+    "kind": "binary",
+    "options": [
+      0,
+      1
+    ],
+    "labels": {
+      "1": "Yes",
+      "0": "No"
+    }
+  },
+  "Educational_special_needs": {
+    "dtype": "int64",
+    "default": 0,
+    "description": "Kebutuhan pendidikan khusus",
+    "kind": "binary",
+    "options": [
+      0,
+      1
+    ],
+    "labels": {
+      "1": "Yes",
+      "0": "No"
+    }
+  },
+  "Debtor": {
+    "dtype": "int64",
+    "default": 0,
+    "description": "Status memiliki tunggakan/utang",
+    "kind": "binary",
+    "options": [
+      0,
+      1
+    ],
+    "labels": {
+      "1": "Yes",
+      "0": "No"
+    }
+  },
+  "Tuition_fees_up_to_date": {
+    "dtype": "int64",
+    "default": 1,
+    "description": "Status pembayaran biaya kuliah sudah up to date",
+    "kind": "binary",
+    "options": [
+      0,
+      1
+    ],
+    "labels": {
+      "1": "Yes",
+      "0": "No"
+    }
+  },
+  "Gender": {
+    "dtype": "int64",
+    "default": 0,
+    "description": "Jenis kelamin",
+    "kind": "binary",
+    "options": [
+      0,
+      1
+    ],
+    "labels": {
+      "1": "Male",
+      "0": "Female"
+    }
+  },
+  "Scholarship_holder": {
+    "dtype": "int64",
+    "default": 0,
+    "description": "Penerima beasiswa",
+    "kind": "binary",
+    "options": [
+      0,
+      1
+    ],
+    "labels": {
+      "1": "Yes",
+      "0": "No"
+    }
+  },
+  "Age_at_enrollment": {
+    "dtype": "int64",
+    "default": 20.0,
+    "description": "Usia saat masuk",
+    "kind": "numeric",
+    "min": 17.0,
+    "max": 70.0
+  },
+  "International": {
+    "dtype": "int64",
+    "default": 0,
+    "description": "Mahasiswa internasional",
+    "kind": "binary",
+    "options": [
+      0,
+      1
+    ],
+    "labels": {
+      "1": "Yes",
+      "0": "No"
+    }
+  },
+  "Curricular_units_1st_sem_credited": {
+    "dtype": "int64",
+    "default": 0.0,
+    "description": "SKS/units diakui semester 1",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 20.0
+  },
+  "Curricular_units_1st_sem_enrolled": {
+    "dtype": "int64",
+    "default": 6.0,
+    "description": "SKS/units diambil semester 1",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 26.0
+  },
+  "Curricular_units_1st_sem_evaluations": {
+    "dtype": "int64",
+    "default": 8.0,
+    "description": "Jumlah evaluasi semester 1",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 45.0
+  },
+  "Curricular_units_1st_sem_approved": {
+    "dtype": "int64",
+    "default": 5.0,
+    "description": "Jumlah mata kuliah lulus semester 1",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 26.0
+  },
+  "Curricular_units_1st_sem_grade": {
+    "dtype": "float64",
+    "default": 12.285714285714286,
+    "description": "Rata-rata nilai semester 1",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 18.875
+  },
+  "Curricular_units_1st_sem_without_evaluations": {
+    "dtype": "int64",
+    "default": 0.0,
+    "description": "Jumlah mata kuliah tanpa evaluasi semester 1",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 12.0
+  },
+  "Curricular_units_2nd_sem_credited": {
+    "dtype": "int64",
+    "default": 0.0,
+    "description": "SKS/units diakui semester 2",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 19.0
+  },
+  "Curricular_units_2nd_sem_enrolled": {
+    "dtype": "int64",
+    "default": 6.0,
+    "description": "SKS/units diambil semester 2",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 23.0
+  },
+  "Curricular_units_2nd_sem_evaluations": {
+    "dtype": "int64",
+    "default": 8.0,
+    "description": "Jumlah evaluasi semester 2",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 33.0
+  },
+  "Curricular_units_2nd_sem_approved": {
+    "dtype": "int64",
+    "default": 5.0,
+    "description": "Jumlah mata kuliah lulus semester 2",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 20.0
+  },
+  "Curricular_units_2nd_sem_grade": {
+    "dtype": "float64",
+    "default": 12.2,
+    "description": "Rata-rata nilai semester 2",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 18.571428571428573
+  },
+  "Curricular_units_2nd_sem_without_evaluations": {
+    "dtype": "int64",
+    "default": 0.0,
+    "description": "Jumlah mata kuliah tanpa evaluasi semester 2",
+    "kind": "numeric",
+    "min": 0.0,
+    "max": 12.0
+  },
+  "Unemployment_rate": {
+    "dtype": "float64",
+    "default": 11.1,
+    "description": "Tingkat pengangguran",
+    "kind": "numeric",
+    "min": 7.6,
+    "max": 16.2
+  },
+  "Inflation_rate": {
+    "dtype": "float64",
+    "default": 1.4,
+    "description": "Tingkat inflasi",
+    "kind": "numeric",
+    "min": -0.8,
+    "max": 3.7
+  },
+  "GDP": {
+    "dtype": "float64",
+    "default": 0.32,
+    "description": "GDP",
+    "kind": "numeric",
+    "min": -4.06,
+    "max": 3.51
+  }
+}
